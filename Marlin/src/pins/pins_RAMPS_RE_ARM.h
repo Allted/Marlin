@@ -84,18 +84,25 @@
   #define Z_CS_PIN         P1_10   // ETH
 #endif
 
-#define E0_STEP_PIN        P2_00   // (26)
-#define E0_DIR_PIN         P0_05   // (28)
-#define E0_ENABLE_PIN      P0_04   // (24)
+#define E0_STEP_PIN        P1_22
+#define E0_DIR_PIN         P1_22
+#define E0_ENABLE_PIN      P1_22
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN        P1_14   // ETH
+  #define E0_CS_PIN        P1_22
 #endif
 
-#define E1_STEP_PIN        P2_08   // (36)
-#define E1_DIR_PIN         P2_13   // (34)
-#define E1_ENABLE_PIN      P4_29   // (30)
+#define E1_STEP_PIN        P2_00   // (26)
+#define E1_DIR_PIN         P0_05   // (28)
+#define E1_ENABLE_PIN      P0_04   // (24)
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN        -1
+  #define E1_CS_PIN        P1_14   // ETH
+#endif
+
+#define E2_STEP_PIN        P2_08   // (36)
+#define E2_DIR_PIN         P2_13   // (34)
+#define E2_ENABLE_PIN      P4_29   // (30)
+#ifndef E2_CS_PIN
+  #define E2_CS_PIN        -1
 #endif
 
 //
